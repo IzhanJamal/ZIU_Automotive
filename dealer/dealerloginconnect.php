@@ -3,7 +3,7 @@
 
 			$servername = 'localhost';
 			$username = 'root';
-			$password = '';
+			$password = 'zorain@123';
 			$dbname = 'ziu';
 
 			$conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -39,12 +39,15 @@
 						while($row = mysqli_fetch_assoc($result)){
 							//Checking If passwords matches 
 							
-							
+								
 								session_start();
+
 								$_SESSION['em'] = $em;
-								$_SESSION['ID']=$row['Dealer_ID'];
+								$_SESSION['ID']=$row['D_ID'];
 								$_SESSION['oname'] = $row['Owner Name'];
 								$_SESSION['pass'] = $row['New Password'];
+
+							//	print_r($_SESSION['ID']);
 								header("location: dealer.php");
 								exit();
 								

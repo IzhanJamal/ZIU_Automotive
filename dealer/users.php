@@ -2,6 +2,7 @@
 
 session_start();
 session_id();
+//echo $_SESSION['ID'];
 
   include('includes/header.php');
   include('includes/nav.php');
@@ -11,7 +12,7 @@ session_id();
 ?>
 
 <?php
-        $sql = "SELECT * FROM salesman_register";
+        $sql = "SELECT * FROM salesman_register where S_ID=".$_SESSION['ID'];
         $run = mysqli_query($conn, $sql);
 
 ?>
@@ -19,7 +20,7 @@ session_id();
             <div class="col-10" style="background: rgba(219, 226, 226); border-radius: 1.5rem;">
                 <div class="card" style="width: 90%; margin-top: 5%; margin-bottom: 5%; margin-left: 5%; border-radius: 1.5rem;">
                   <div class="card-body">
-                    <h4 class="card-title">Salesman</h4>
+                    <h4 class="card-title">Salesman <?php echo $_SESSION['ID']?></h4>
                     <p class="card-description"><code></code>
                     </p>
                     <table class="table table-striped">
