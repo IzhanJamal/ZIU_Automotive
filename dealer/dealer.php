@@ -1,5 +1,9 @@
 <?php
 
+session_start();
+session_id();
+
+
   include('includes/header.php');
   include('includes/nav.php');
   include('includes/side_nav.php');
@@ -16,7 +20,9 @@
                     </h4>
                     <?php 
 
-                      $sql = "SELECT * FROM salesman_register ORDER by S_ID";
+                      $sql = "SELECT * FROM salesman_register";
+
+                      //$sql = "SELECT * FROM salesman_register ORDER by S_ID";
                       $run = mysqli_query($conn, $sql);
                       
                       $row = mysqli_num_rows($run);

@@ -69,8 +69,8 @@
                                 <button type="submit" name="submit" class="lbtn mt-3 mb-5">Login</button>
                             </div>
                         </div>
-                        <a href="">Forget Password?</a><br>
-                        <a href="../admin/adminlogin.php">Admin Login</a>
+                        <a href="../admin/adminlogin.php">Admin Login</a><br>
+                        <a href="../Salesman/login.php">Salesman Login</a>
                     </form>
                 </div>
             </div>

@@ -5,8 +5,8 @@ session_start();
   include('includes/header.php');
   include('includes/nav.php');
   include('includes/side_nav.php');
-  include('includes/dbconfig.php')
-
+  include('includes/dbconfig.php');
+  include('includes/alert.php');
 ?>
 
               <div class="col-10" style="background: rgba(219, 226, 226); border-radius: 1.5rem;">

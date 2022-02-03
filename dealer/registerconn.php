@@ -36,6 +36,20 @@
             exit();
 
         }
+
+        //Password Validation
+        if(strlen($pass) < 8)
+        {
+            header("location: register.php?messageD=Password Should be Above 8 Chracters!");
+            exit();
+        }
+        // elseif(ctype_upper($pass))
+        // {
+
+        // }
+
+        //Hashing Password 
+        //$hash = password_hash($pass, PASSWORD_DEFAULT);*/
         
         //Email Validity
         if(!filter_var($em, FILTER_VALIDATE_EMAIL)){
@@ -51,16 +65,12 @@
                 header("location: register.php?messageD=Email+Already+Exists");
                 exit();
             } else{
-
-                //Hashing Password 
-                //$hash = password_hash($pass, PASSWORD_DEFAULT);*/
                 
                 //Signing up  
-                $sql = "INSERT INTO `salesman_register` (`S_ID`, `Salesman Name`, `CNIC`, `Email`, 
+                $sql = "INSERT INTO `salesman_register` (`S_ID`, `Dealer_ID`, `Salesman Name`, `CNIC`, `Email`, 
                 `Phone Number`, `Gender`, `DOB`, `Currently Employed`, `Years of Experience`, 
                 `Available Start Date`, `Password`, `Address 1`, `Address 2`, `Landline`, `Postal`, 
-                `City`, `Country`)
-                VALUES (NULL, '$sname', '$cnic', '$em', '$pnum', '$gender', 
+                `City`, `Country`) VALUES (NULL, '2', '$sname', '$cnic', '$em', '$pnum', '$gender', 
                 '$dob', '$ce', '$experience', '$availdate', '$pass', '$add1', '$add2', '$landline', '$postal', 
                 '$city', '$country')";
 

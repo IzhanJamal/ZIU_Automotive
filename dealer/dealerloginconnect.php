@@ -42,6 +42,7 @@
 							
 								session_start();
 								$_SESSION['em'] = $em;
+								$_SESSION['ID']=$row['Dealer_ID'];
 								$_SESSION['oname'] = $row['Owner Name'];
 								$_SESSION['pass'] = $row['New Password'];
 								header("location: dealer.php");

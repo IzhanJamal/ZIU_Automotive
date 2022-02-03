@@ -1,0 +1,75 @@
+.mainform{
+	
+	background-color:#F5F1F0;
+	margin:auto;
+	width:1000px;
+	
+}
+
+.form{
+	
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+
+.form-label{
+	float: left;
+	width: 250px;
+	
+	
+}
+
+.form-labelr{
+	float: left;
+	width: 300px;
+	
+	
+}
+
+.textbox{
+	
+	height: 30px;
+	width:250px;
+}
+
+.textboxr{
+	
+	height: 30px;
+	width:340px;
+}
+
+.dropdown{
+	
+	
+	height: 30px;
+	width:250px;
+	
+}
+
+.dropdownr{
+	
+	
+	height: 30px;
+	width:310px;
+	
+}
+
+.text-area{
+	
+	width:250px;
+	
+}
+
+#footer{
+	
+	background: grey;
+	color: #fff;
+	font-size: 15px;
+	padding-top: 5px;
+	padding-bottom:2px;
+	
+}
+
+
+

@@ -38,6 +38,19 @@
             exit();
 
         }
+
+        //Password Validity
+        if(strlen($pass) < 8)
+        {
+            header("location: register.php?messageD=Password must be more than 8 characters And Conatin A Uppercase!");
+            exit();
+        }
+
+        // if(!preg_match('[/A-Z/]', $pass)){
+
+        //     header("location: register.php?message=Password must contain Uppercase characters!");
+        //     exit();
+        // }
         
         //Email Validity
         if(!filter_var($em, FILTER_VALIDATE_EMAIL)){

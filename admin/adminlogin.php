@@ -69,7 +69,8 @@
                                 <button type="submit" name="submit" class="lbtn mt-3 mb-5">Login</button>
                             </div>
                         </div>
-                        <a href="../dealer/dlogin.php">Dealer Login</a>
+                        <a href="../dealer/dlogin.php">Dealer Login</a><br>
+                        <a href="../Salesman/login.php">Salesman Login</a>
                     </form>
                 </div>
             </div>
