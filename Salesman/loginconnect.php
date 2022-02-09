@@ -43,6 +43,10 @@
 								session_start();
 								$_SESSION['em'] = $em;
 								$_SESSION['pass'] = $row['Password'];
+								$_SESSION['s_id']=$row['S_ID'];
+								$_SESSION['sname']=$row['Salesman Name'];
+
+							//	print_r($_SESSION['s_id']);
 								header("location: invoice.php");
 								exit();
 								

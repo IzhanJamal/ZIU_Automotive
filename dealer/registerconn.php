@@ -1,8 +1,11 @@
 <?php
 
+    session_start();
+
+
     $servername = 'localhost';
     $username = 'root';
-   $apssword = 'zorain@123';
+    $password = 'zorain@123';
     $dbname = 'ziu';
 
     $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -65,12 +68,15 @@
                 header("location: register.php?messageD=Email+Already+Exists");
                 exit();
             } else{
-                
+                // echo '<pre>';
+                // print_r($_SESSION['ID']);
+                // echo '</pre>';
+                // die('================= TESTING ================');
                 //Signing up  
                 $sql = "INSERT INTO `salesman_register` (`S_ID`, `Dealer_ID`, `Salesman Name`, `CNIC`, `Email`, 
                 `Phone Number`, `Gender`, `DOB`, `Currently Employed`, `Years of Experience`, 
                 `Available Start Date`, `Password`, `Address 1`, `Address 2`, `Landline`, `Postal`, 
-                `City`, `Country`) VALUES (NULL, '2', '$sname', '$cnic', '$em', '$pnum', '$gender', 
+                `City`, `Country`) VALUES (NULL, ".$_SESSION['ID'].", '$sname', '$cnic', '$em', '$pnum', '$gender', 
                 '$dob', '$ce', '$experience', '$availdate', '$pass', '$add1', '$add2', '$landline', '$postal', 
                 '$city', '$country')";
 

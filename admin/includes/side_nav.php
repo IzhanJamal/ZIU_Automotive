@@ -40,5 +40,18 @@
                 <i class="mdi mdi-delete-sweep menu-icon"></i>
               </a>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="dealer_sales.php">
+                <span class="menu-title">Dealers Sales</span>
+                <i class="mdi mdi-account menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dealer_order.php">
+                <span class="menu-title">Dealers Orders</span>
+                <i class="mdi mdi-delete-sweep menu-icon"></i>
+              </a>
+            </li>
           </ul>
         </nav>

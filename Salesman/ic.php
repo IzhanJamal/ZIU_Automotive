@@ -1,8 +1,9 @@
 <?php
+session_start();
 
     $servername = 'localhost';
     $username = 'root';
-   $apssword = 'zorain@123';
+   $password = 'zorain@123';
     $dbname = 'ziu';
 
     $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -48,15 +49,24 @@
             exit();
         }
         else
-        {        
+        {       
+           
+        
                 
                 //Signing up  
                 $sql = "INSERT INTO `invoice` VALUES (NULL, '$fname', '$cnic', '$comp', 
                 '$em', '$add', '$country', '$city', '$zip', '$mob', '$landline', 
-                '$dob', '$brand', '$plateno', '$reg', '$mile', '$year', '$mile', '$color', '$pay', 
-                '$price', '$tax', '$total')";
+                '$dob', '$brand', '$plateno', '$reg', '$mile', '$year', '$model', '$color', '$pay', 
+                '$price', '$tax', '$total',".$_SESSION['s_id'].")";
 
-                if(mysqli_query($conn, $sql)){
+
+                // echo '<pre>';
+                // print_r($sql);
+                // echo '</pre>';
+                // die('================= TESTING ================');
+
+                if(mysqli_query($conn, $sql)){  
+
                     header("location: invoice.php?message=Successfully+Submitted!");
                     exit(); 
                 }else{
