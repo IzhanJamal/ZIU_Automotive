@@ -57,7 +57,7 @@ session_start();
                 $sql = "INSERT INTO `invoice` VALUES (NULL, '$fname', '$cnic', '$comp', 
                 '$em', '$add', '$country', '$city', '$zip', '$mob', '$landline', 
                 '$dob', '$brand', '$plateno', '$reg', '$mile', '$year', '$model', '$color', '$pay', 
-                '$price', '$tax', '$total',".$_SESSION['s_id'].")";
+                '$price', '$tax', '$total',".$_SESSION['s_id'].",NUll,0)";
 
 
                 // echo '<pre>';

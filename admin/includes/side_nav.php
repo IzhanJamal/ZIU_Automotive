@@ -53,5 +53,12 @@
                 <i class="mdi mdi-delete-sweep menu-icon"></i>
               </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="invoice.php">
+                <span class="menu-title">Total Invoices</span>
+                <i class="mdi mdi-account menu-icon"></i>
+              </a>
+            </li>
+
           </ul>
         </nav>

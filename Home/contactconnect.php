@@ -2,7 +2,7 @@
 
     $servername = 'localhost';
     $username = 'root';
-    $apssword = 'zorain@123';
+    $password = 'zorain@123';
     $dbname = 'ziu';
 
     $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -21,6 +21,11 @@
                 
         
                 $sql = "INSERT INTO `contactus` VALUES (NULL, '$name', '$em', '$sub', '$mess')";
+                // echo '<pre>';
+                // print_r($sql);
+                // echo '</pre>';
+                // die('----------TEST----------');
+
                 if(mysqli_query($conn, $sql)){
                     header("location: contact.php?message=Successfully+Submitted!");
                     exit(); 

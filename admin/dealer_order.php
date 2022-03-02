@@ -56,7 +56,7 @@ session_start();
                             ?>
                                     
                                     <div class="table-responsive" style="background: rgba(219, 226, 226); border-radius: 1.5rem;">
-                                        <div class="card" style="width: 300%; margin-top: 6%; margin-bottom: 5%; margin-left: 5%; margin-right: 5%;;border-radius: 1.5rem;">
+                                        <div class="card" style="width: 400%; margin-top: 6%; margin-bottom: 5%; margin-left: 5%; margin-right: 5%;;border-radius: 1.5rem;">
                                             <div class="card-body">
                                             <h4 class="card-title">Customers </h4>
                                             <p class="card-description"><code></code>

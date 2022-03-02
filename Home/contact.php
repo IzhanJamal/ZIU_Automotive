@@ -73,6 +73,7 @@
 
 
                 <li class="nav-item"><a class="nav-link" href="../admin/adminlogin.php">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="tracker.php">Track Product</a></li>
 
                 <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
@@ -130,7 +131,7 @@
             <div class="left-content">
               <h4>About our office</h4>
               <p>At ZIU's, The Power of Dreams drives us to create intelligent products that enhance mobility and increase the joy in people’s lives.
-                <br><br>Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti.</p>
+                <br><br>Over the past consecutive years ZIU's Automotive has been scoring one goal after another.</p>
               <ul class="social-icons">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -187,7 +188,7 @@
           <div class="col-md-4">
             <img src="assets/images/team_01.jpg" class="img-fluid" alt="">
 
-            <h5 class="text-center" style="margin-top: 15px;">John Doe</h5>
+            <h5 class="text-center" style="margin-top: 15px;">Zorain</h5>
           </div>
         </div>
       </div>
@@ -198,7 +199,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
-              <p>Copyright © 2020 Company Name - Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></p>
+              <p>Copyright © 2022 ZIU'S Automotive</p>
             </div>
           </div>
         </div>

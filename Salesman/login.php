@@ -70,7 +70,8 @@
                             </div>
                         </div>
                         <a href="../admin/adminlogin.php">Admin Login</a><br>
-                        <a href="../dealer/dlogin.php">Dealer Login</a>
+                        <a href="../dealer/dlogin.php">Dealer Login</a><br>
+                        <a href="../Home/index.html">Home</a>
                     </form>
                 </div>
             </div>
