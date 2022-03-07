@@ -73,7 +73,7 @@ session_id();
                               ?>
 
                               <tr>
-                                  <td><?php echo $row['inv_id'];; ?></td>
+                                  <td><?php echo $row['inv_id']; ?></td>
                                   <td><?php echo $row['fullname']; ?></td>
                                   <td><?php echo $row['cnic']; ?></td>
                                   <td><?php echo $row['company']; ?></td>
@@ -98,8 +98,8 @@ session_id();
                                   <td><?php echo $row['totalamount']; ?></td>
                                   <td><?php echo $statusValue; ?></td>
                                   <td>
-                                    <form action="admin.controller.php" id="statusForm" method="post">
-                                      <select name="statusId" id="statusSelect" class="form-control">
+                                    <form action="admin.controller.php" id="statusForm_<?= $row['inv_id'] ?>" method="post">
+                                      <select name="statusId" id="statusSelect_<?= $row['inv_id'] ?>" class="form-control order_stuts_class">
                                         <option value="-1">Select Status</option>
                                         <option value="0" <?= $row['status'] == 0 ? 'selected' : '' ?>>Pending</option>
                                         <option value="1" <?= $row['status'] == 1 ? 'selected' : '' ?>>Approved</option>
@@ -111,7 +111,7 @@ session_id();
                                       <input type="text" name="inv_id" value="<?= $row['inv_id']; ?>" style="display: none">
                                       <input type="hidden" name="funcName" value="updateStatus">
 
-                                      <button type="submit" style="display: none" id="sbmtBtn"></button>
+                                      <button type="submit" style="display: none" id="sbmtBtn_<?= $row['inv_id'] ?>"></button>
                                     </form>
                                   </td>
                                      
@@ -134,13 +134,20 @@ session_id();
               include('includes/footer.php');
             ?>
             <script>
+
               $(document).ready(function () {
 
-                $('#statusSelect').on('change', function(){
-                  console.log($(this).val());
-                  if($(this).val() > -1)
-                    $('#sbmtBtn').click();
+                $('.order_stuts_class').each(function(){
+
+                  $(this).on('change', function(){
+
+                    console.log($(this).val());
+                    if($(this).val() > -1)
+                      $(this).parent().submit();
+                  });
+
                 });
 
               });
+
             </script>
