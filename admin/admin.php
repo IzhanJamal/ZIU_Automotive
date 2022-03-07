@@ -14,7 +14,7 @@ session_start();
                 <div class="card bg-dark card-img-holder text-white">
                   <div class="card-body">
                     <img src="assets/images/" class="card-img-absolute" alt="" />
-                    <h4 class="mb-3">Dealers<i class="mdi mdi-account menu-icon mdi-24px float-right"></i>
+                    <h4 class="mb-3">Total Dealers<i class="mdi mdi-account menu-icon mdi-24px float-right"></i>
                     </h4>
                     <?php 
 
@@ -69,6 +69,28 @@ session_start();
                 </div>
               </div>
 
+              <div class="col-md-5 stretch-card grid-margin" style="height: 25%; width: 40%; margin-top: -18%; float: right;">
+                <div class="card bg-dark card-img-holder text-white">
+                  <div class="card-body">
+                    <img src="assets/images/" class="card-img-absolute" alt="" />
+                    <h4 class="mb-3">Submitted Form<i class="mdi mdi-account menu-icon mdi-24px float-right"></i>
+                    </h4>
+                    <?php 
+
+                      $sql = "SELECT * FROM contactus";
+                      $run = mysqli_query($conn, $sql);
+                      
+                      $row = mysqli_num_rows($run);
+                      echo '<h2 class="mb-2"> '.$row. '<h2>';
+
+                    ?>
+                  </div>
+                </div>
+              </div>
+
+              
+
+              
 
 
 

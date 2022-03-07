@@ -125,7 +125,7 @@ session_start();
                                                             <td><?= $row['tax']; ?></td>
                                                             <td><?= $row['totalamount']; ?></td>
                                                             
-                                                            <a href="view.php?view=<?= $id;?> "> <button class="btn btn-gradient-success btn-rounded btn-fw"> View </button> </a>
+                                                            <!-- <a href="view.php?view=<?= $id;?> "> <button class="btn btn-gradient-success btn-rounded btn-fw"> View </button> </a> -->
                                                         </tr>
 
                                                         <?php
