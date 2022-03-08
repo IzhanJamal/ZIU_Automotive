@@ -135,11 +135,5 @@
         </div>
 
 
-        <div style="width:55%; margin-left: 30% ; text-align: center; margin-bottom: -6%">
-        <?php
-            include('includes/alert.php');
-        ?>
-      
-      
-      </div>
+       
       </nav>
