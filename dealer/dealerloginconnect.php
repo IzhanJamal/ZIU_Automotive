@@ -46,6 +46,8 @@
 								$_SESSION['ID']=$row['D_ID'];
 								$_SESSION['oname'] = $row['Owner Name'];
 								$_SESSION['pass'] = $row['New Password'];
+								$_SESSION['role'] = "dealer";
+								$_SESSION['is_login']="true";
 
 							//	print_r($_SESSION['ID']);
 								header("location: dealer.php");

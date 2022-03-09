@@ -1,3 +1,15 @@
+<?php
+   session_start();
+   
+   if(!isset($_SESSION['is_login']) || $_SESSION['role'] != 'admin'){       //agr set nai login to locate to adminlogin
+    header('location: adminlogin.php');
+   }
+
+
+
+   
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

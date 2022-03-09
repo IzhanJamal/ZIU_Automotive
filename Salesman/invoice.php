@@ -6,6 +6,7 @@
     // echo '</pre>';
     // die('================= TESTING ================');
     include('includes/dbconfig.php');
+    include('includes/header.php');
 ?>
 
 <!DOCTYPE html>
@@ -78,7 +79,7 @@
 		
 			<!--<img href="index.php" class="logo" src="Images/logo.png">-->
 			
-			<a id="brlogout" style="margin-left: 80%"; role="button" href="login.php" type="button" class="btn btn-dark">Logout</a>
+			<a id="brlogout" style="margin-left: 80%"; role="button" href="logout.php" type="button" class="btn btn-dark">Logout</a>
 
         <!-- Form Details -->
 		

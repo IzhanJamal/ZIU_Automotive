@@ -2,6 +2,11 @@
 session_start();
 session_id();
 
+// echo '<pre>';
+// print_r($_SESSION['is_login']);
+// echo '</pre>';
+// die('----------TEST----------');
+
   include('includes/header.php');
   include('includes/nav.php');
   include('includes/side_nav.php');

@@ -1,5 +1,7 @@
 <?php
 	session_start();
+
+    include('../Session/handle.php');
 ?>
 
 <!doctype html>

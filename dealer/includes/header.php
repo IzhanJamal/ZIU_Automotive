@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <?php
-   // session_start();
+   session_start();
+   if(!isset($_SESSION['is_login']) || $_SESSION['role'] != 'dealer'){
+     header('location: dlogin.php');
+   }
+
+ 
+
+
 ?>
 <html lang="en">
   <head>

@@ -45,6 +45,8 @@
 								$_SESSION['pass'] = $row['Password'];
 								$_SESSION['s_id']=$row['S_ID'];
 								$_SESSION['sname']=$row['Salesman Name'];
+								$_SESSION['role']="salesmen";
+								$_SESSION['is_login']="true";
 
 							//	print_r($_SESSION['s_id']);
 								header("location: invoice.php");
